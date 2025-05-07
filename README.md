@@ -1,6 +1,6 @@
 # pygame-labbing
 
-I'm taking a summer to improve how I code in Python.
+I'm taking a summer to improve how I code in Python by working on pygame.
 
 Some topics I'm planning on working on are:
 
