@@ -2,8 +2,8 @@
 
 ```mermaid
 stateDiagram-v2
-    [*] --> start
-    start --> [*]
+    [*] --> start : open menus game
+    start --> [*] : exit
 
     start --> settings : settings button
     settings --> start : back
@@ -15,9 +15,10 @@ stateDiagram-v2
     levelselect --> start : back
     levelselect --> game : selection
 
-    start --> game
-    game --> start
+    start --> game : play
+    game --> start : back
     state game {
+        direction LR
         level1 : level1
         level1 --> level2
 
@@ -32,7 +33,4 @@ stateDiagram-v2
     note right of game
         level select can update game's internal level.
     end note
-
-
-
 ```
