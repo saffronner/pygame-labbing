@@ -2,6 +2,9 @@
 
 ```mermaid
 stateDiagram-v2
+    [*] --> start
+    start --> [*]
+
     start --> settings : settings button
     settings --> start : back
 
